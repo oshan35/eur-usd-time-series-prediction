@@ -1,0 +1,46 @@
+library(tidyverse)
+
+vehicles <- read.csv("vehicles.csv")
+
+View(vehicles)
+
+summary(vehicles)
+
+which(is.na(vehicles))
+
+boxplot(vehicles$Circ)
+boxplot(vehicles$Comp)
+boxplot(vehicles$D.Circ)
+
+boxplot(vehicles$Rad.Ra)
+
+boxplot(vehicles$Pr.Axis.Ra)
+
+boxplot(vehicles$Max.L.Ra)
+
+boxplot(vehicles$Scat.Ra)
+boxplot(vehicles$Elong)
+boxplot(vehicles$Pr.Axis.Rect)
+boxplot(vehicles$Max.L.Rect)
+
+boxplot(vehicles$Sc.Var.Maxis)
+
+boxplot(vehicles$Sc.Var.maxis)
+
+# not outlier
+boxplot(vehicles$Ra.Gyr)
+
+# outlier
+boxplot(vehicles$Skew.Maxis)
+
+boxplot(vehicles$Skew.maxis)
+
+boxplot(vehicles$Kurt.maxis)
+
+boxplot(vehicles$Kurt.Maxis)
+boxplot(vehicles$Holl.Ra)
+
+
+
+
+
